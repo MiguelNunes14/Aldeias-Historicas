@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="container-fluid mt-5">
+    <!-- Conteúdo do Header -->
+    <header>
+        <div class="head">
+            <a href="#"><img id="logotipo-head" src="imagens/castle.svg"></a>
+            <h1>Aldeias Históricas</h1>
+        </div>
+    </header>
+    <!-- Conteúdo da Nav -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light mx-2 sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="Imagens/castle.svg" id="logotipo-nav">
+                <span class="span">Aldeias Históricas</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barraNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barraNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle opção" data-bs-toggle="dropdown" href="#">Aldeias
+                            Históricas</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="LinharesDaBeira.html">Linhares da Beira</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Marialva.html">Marialva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Monsanto.html">Monsanto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CasteloRodrigo.html">Castelo Rodrigo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Almeida.html"> Almeida</a>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registo.html">Registo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Conteúdo do Main -->
+    <main class="container-fluid">
+        <!-- SlideShow JQuery -->
+        <div class="tamanho1">
+            <div id="SlideShow" class="carousel slide tamanho" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="LinharesDaBeira.html">
+                            <img src="Imagens/linhares da beira/linhares9.jpg" class="tamanho">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <a class="text-decoration-none" href="">
+                           <h5 class="text-white Slide-Caption">Rua da aldeia de Linhares da Beira</h5>
+                           </a>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Marialva.html">
+                            <img src="imagens/marialva/marialva6.jpg" class="tamanho">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <a class="text-decoration-none" href="" >
+                           <h5 class="text-white Slide-Caption">Vista Noturna da aldeia de Marialva</h5>
+                           </a>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Monsanto.html">
+                            <img src="Imagens/monsanto/monsanto8.jpg" class="tamanho">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <a class="text-decoration-none" href="">
+                           <h5 class="text-white Slide-Caption">Rua da aldeia de Monsanto</h5>
+                           </a>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <a href="CasteloRodrigo.html">
+                            <img src="Imagens/castelo rodrigo/castelo_rodrigo2.jpg" class="tamanho">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <a class="text-decoration-none" href="">
+                           <h5 class="text-white Slide-Caption">Vista Noturna de Castelo Rodrigo</h5>
+                           </a>
+                        </div> 
+                    </div>
+                    <div class="carousel-item">
+                        <a href="Almeida.html">
+                            <img src="Imagens/almeida/almeida4.jpg" class="tamanho">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <a class="text-decoration-none" href="">
+                           <h5 class="text-white Slide-Caption">Rua da aldeia de Almeida</h5>
+                           </a>
+                        </div> 
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#SlideShow" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#SlideShow" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <p class="alinhar">Imagens das Aldeias Históricas</p>
+        </div>
+        <div class="tamanho1">
+            <iframe class="video" src="https://www.youtube.com/embed/kP2OtQrVm1o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="alinhar">Vídeo promocional das Aldeias Históticas</p>
+        </div>
+    </main>
+    <!-- Conteúdo do footer -->
+    <footer><h5>Miguel Ângelo de Jesus Amaral Nunes</h5></footer>
+    <!-- Modal do Login -->
+    <div class="modal fade" id="Login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginTítulo">Login</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form action="post">
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td><h6 class="me-2">Nome de utilizador</h6></td>
+                                <td>
+                                    <input type="text" name="utname" id="utilizador" placeholder="Digite Nome de utilizador" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h6 class="me-2">Password</h6></td>
+                                <td>
+                                    <input type="tel" name="utpassword" id="loginpassword" placeholder="Insira palavra-passe" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+                        <input type="submit" value="Submeter" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

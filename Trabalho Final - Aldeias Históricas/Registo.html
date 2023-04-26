@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="container-fluid mt-5">
+    <!-- Conteúdo do Header -->
+    <header>
+        <div class="head">
+            <a href="PáginaPrincipal.html"><img id="logotipo-head" src="imagens/castle.svg"></a>
+            <h1>Aldeias Históricas</h1>
+        </div>
+    </header>
+    <!-- Conteúdo da Nav -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light mx-2 sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="Imagens/castle.svg" id="logotipo-nav">
+                <span class="span">Aldeias Históricas</span>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#barraNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="barraNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle opção" data-bs-toggle="dropdown" href="#">Aldeias
+                            Históricas</a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="LinharesDaBeira.html">Linhares da Beira</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Marialva.html">Marialva</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Monsanto.html">Monsanto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="CasteloRodrigo.html">Castelo Rodrigo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Almeida.html"> Almeida</a>
+                            </li>
+                        </ul>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Registo.html">Registo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-3">
+        <form action="post">
+            <table class="table">
+                <tr>
+                    <td>
+                        <h6 class="me-2">Nome</h6>
+                    </td>
+                    <td>
+                        <input class="w-75" type="text" name="utnome" placeholder="insira o seu nome" maxlength="300"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6 class="">Email</h6>
+                    </td>
+                    <td>
+                        <input class="w-75" type="email" name="utemail" id="email" placeholder="Digite email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h6 class="me-2">Nome de utilizador</h6>
+                    </td>
+                    <td>
+                        <input class="w-75" type="text" name="utname" id="NomeUtilizador"
+                            placeholder="Insira Nome de Utilizador" minlength="6" maxlength="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w-25">
+                        <h6 class="me-2">Password</h6>
+                    </td>
+                    <td>
+                        <input class="w-75" type="password" name="utpassword" id="loginpassword"
+                            placeholder="Insira palavra-passe" minlength="6" maxlength="15" required>
+                    </td>
+                </tr>
+            </table>
+                <input type="submit" value="Submeter" class="btn btn-primary">
+        </form>
+    </div>
+    <!-- Conteúdo do Footer -->
+    <footer><h5>Miguel Ângelo de Jesus Amaral Nunes</h5></footer>
+    <!-- Modal do Login -->
+    <div class="modal fade" id="Login" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginTítulo">Login</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <form action="post">
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td><h6 class="me-2">Nome de utilizador</h6></td>
+                                <td>
+                                    <input type="text" name="utname" id="utilizador" placeholder="Digite Nome de utilizador" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><h6 class="me-2">Password</h6></td>
+                                <td>
+                                    <input type="tel" name="utpassword" id="loginpassword" placeholder="Insira palavra-passe" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+                        <input type="submit" value="Submeter" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
